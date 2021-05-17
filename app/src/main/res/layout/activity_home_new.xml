@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_home_new"
+    tools:context="com.money.well.controller.home.HomeNewActivity">
+
+
+    <include
+        android:id="@+id/login_topbar"
+        layout="@layout/topbar"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.money.well.controller.base.CCPCustomViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/flay_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_bottom_home"
+                android:layout_width="@dimen/bottom_icon_size"
+                android:layout_height="@dimen/bottom_icon_size"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tab_home">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_bottom_home"
+                style="@style/tab_main_new"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bottom_text_padding"
+                android:text="Home"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/tv_unread_home_number"
+                android:visibility="gone"
+                style="@style/main_unread"/>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flay_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_bottom_group"
+                android:layout_width="@dimen/bottom_icon_size"
+                android:layout_height="@dimen/bottom_icon_size"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/group_icon">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_bottom_group"
+                android:layout_marginTop="@dimen/bottom_text_padding"
+                style="@style/tab_main_new"
+                android:background="@color/white"
+                android:text="Groups"/>
+
+            <TextView
+                android:id="@+id/tv_unread_group_number"
+                android:visibility="gone"
+                style="@style/main_unread"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flay_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_bottom_contacts"
+                android:layout_width="@dimen/bottom_icon_size"
+                android:layout_height="@dimen/bottom_icon_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/contact_icon_tab"></ImageView>
+
+            <TextView
+                android:id="@+id/txt_bottom_contact"
+                android:layout_marginTop="@dimen/bottom_text_padding"
+                style="@style/tab_main_new"
+                android:background="@color/white"
+                android:text="Contacts"/>
+
+
+            <TextView
+                android:id="@+id/tv_unread_contact_number"
+                style="@style/main_unread"
+                android:text="3"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flay_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_bottom_setting"
+                android:layout_width="@dimen/bottom_icon_size"
+                android:layout_height="@dimen/bottom_icon_size"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/setting_icon">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_bottom_setting"
+                style="@style/tab_main_new"
+                android:layout_marginTop="@dimen/bottom_text_padding"
+                android:text="Setting"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

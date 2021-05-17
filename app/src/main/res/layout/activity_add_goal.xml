@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_add_goal"
+    android:orientation="vertical"
+    tools:context=".controller.groups.AddGoalActivity">
+
+    <include
+        android:id="@+id/login_topbar"
+        layout="@layout/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/content_padding_left"
+        android:paddingRight="@dimen/content_padding_right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Please add new goal"
+            android:textColor="@color/black">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/lay_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="0dp"
+                android:text="Group goal">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/edt_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/dimen_text_font_size"
+                android:hint=""
+                android:shadowColor="@color/black"
+                android:text="">
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/monsoon" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/content_padding_left"
+            android:paddingRight="@dimen/content_padding_right">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="0dp"
+                android:text="Goal amount">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/edt_goal_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/transparent"
+                    android:paddingLeft="10dp"
+                    android:gravity="right|center_vertical"
+                    android:inputType="number"
+                    android:textSize="@dimen/dimen_text_font_size"
+                    android:hint="Please input amount"
+                    android:shadowColor="@color/black"
+                    android:text="">
+                </EditText>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/monsoon">
+
+            </View>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:text="Save"
+            android:background="@drawable/radius_button">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

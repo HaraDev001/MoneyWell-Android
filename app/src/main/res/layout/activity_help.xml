@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_help"
+    android:orientation="vertical"
+    tools:context="com.money.well.controller.settings.HelpActivity">
+
+    <include
+        android:id="@+id/login_topbar"
+        layout="@layout/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_faq"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_pressed_top"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <ImageView
+                android:layout_width="@dimen/setting_icon_size"
+                android:layout_height="@dimen/setting_icon_size"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:src="@drawable/faq_icon"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="@dimen/help_padding_left"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:text="FAQ"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="@dimen/setting_padding_right"
+                android:src="@drawable/arrow_right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_pressed_top"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <ImageView
+                android:layout_width="@dimen/setting_icon_size"
+                android:layout_height="@dimen/setting_icon_size"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:src="@drawable/contact_icon"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="@dimen/help_padding_left"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:text="Contact Us"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="@dimen/setting_padding_right"
+                android:src="@drawable/arrow_right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_policy"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_pressed_top"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:src="@drawable/policy_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="25dp"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:text="Privacy Policy"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="@dimen/setting_padding_right"
+                android:src="@drawable/arrow_right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

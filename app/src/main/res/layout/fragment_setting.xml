@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.home.fragment.SettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradient_drawable"
+            android:paddingLeft="@dimen/content_padding_left"
+            android:paddingRight="@dimen/content_padding_right">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/user_image"
+                    android:layout_gravity="center"
+                    app:border_color="#FF000000"
+                    app:border_width="2dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="John terry">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray06">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/item_pressed_top"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <ImageView
+                    android:layout_width="@dimen/setting_image_size"
+                    android:layout_height="@dimen/setting_image_size"
+                    android:layout_marginLeft="@dimen/setting_padding_left"
+                    android:src="@drawable/user_icon1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="@dimen/setting_padding_right"
+                    android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray06">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/lay_donation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/item_pressed_top"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <ImageView
+                    android:layout_width="@dimen/setting_image_size"
+                    android:layout_height="@dimen/setting_image_size"
+                    android:layout_marginLeft="@dimen/setting_padding_left"
+                    android:src="@drawable/donation_icon"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    android:text="Donations"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="@dimen/setting_padding_right"
+                    android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray06">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/lay_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/item_pressed_top"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="@dimen/setting_padding_left"
+                    android:paddingLeft="2dp"
+                    android:src="@drawable/setting_help" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    android:text="Help"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="@dimen/setting_padding_right"
+                    android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray06">
+            </View>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

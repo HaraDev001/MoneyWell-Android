@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">MoneyWell</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Groups</string>
+    <string name="title_notifications">Contacts</string>
+    <string name="title_settings">Settings</string>
+
+    <!--    sdk facebook-->
+
+    <string name="facebook_app_id">1068499036858330</string>
+    <string name="fb_login_protocol_scheme">fb1068499036858330</string>
+
+    <!--    sdk google sign in-->
+    <string name="server_client_id">225201044136-f43nao6tsd1brlm59i6pl7c4gp0i7v4l.apps.googleusercontent.com</string>
+
+
+    <string name="title_help_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</string>
+
+    <!-- server url -->
+<!--    <string name="str_cloud_http_server">http://120.27.126.187:61000</string>-->
+    <string name="str_cloud_http_server">http://3.9.178.145</string>
+    <string name="str_local_http_server">http://192.168.1.100:21000</string>
+
+    <!-- apis -->
+    <string name="str_url_login">/communication/tryUserLogin</string>
+    <string name="str_url_social_login">/communication/trySocialLogin</string>
+    <string name="str_url_help_content">/communication/getHelpContent</string>
+    <string name="str_url_get_verify_code">/communication/sendSMS</string>
+    <string name="str_url_update_email">/communication/updateEmail</string>
+    <string name="str_url_send_forgot_password_email">/communication/sendEmailForForgotPassword</string>
+    <string name="str_url_send_register_email">/communication/sendEmailForRegister</string>
+    <string name="str_url_social_register">/communication/trySocialRegister</string>
+    <string name="str_url_send_verification_code">/communication/sendVerificationCode</string>
+    <string name="str_url_change_password">/communication/changePassword</string>
+    <string name="str_url_get_nation_list">/communication/getNationList</string>
+    <string name="str_url_get_update_profile">/communication/updateUserProfile</string>
+    <string name="str_url_image_upload">/communication/uploadImageFile</string>
+    <string name="str_url_update_name">/communication/updateUserName</string>
+    <string name="str_url_get_group">/communication/getGroup</string>
+    <string name="str_url_get_user_group">/communication/getUserGroup</string>
+    <string name="str_url_get_group_info">/communication/getGroupInformation</string>
+    <string name="str_url_join_group">/communication/joinGroup</string>
+    <string name="str_url_create_group">/communication/createGroup</string>
+    <string name="str_url_group_member">/communication/getGroupMember</string>
+    <string name="str_url_group_contribution">/communication/getGroupContribution</string>
+    <string name="str_url_get_donation_info">/communication/getDonationInformation</string>
+    <string name="str_url_update_donation">/communication/updateDonationHistory</string>
+    <string name="str_url_get_receiver_information">/communication/getReceiverInformation</string>
+
+    <!-- page title -->
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="title_edit_username">Edit Username</string>
+    <string name="title_change_email">Change Email</string>
+    <string name="title_change_paypal">Change PayPal</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_input_password">Input Password</string>
+    <string name="title_profile_setting">Profile Setting</string>
+    <string name="title_upload_photo">Upload photo</string>
+    <string name="title_help">Help</string>
+    <string name="title_help_faq">FAQ</string>
+    <string name="title_help_contact">Contact Us</string>
+    <string name="title_help_policy">Privacy Policy</string>
+    <string name="title_verify_email">Verify Email</string>
+    <string name="title_search_group">Search Group</string>
+    <string name="title_join_group">Join Group</string>
+    <string name="title_create_group">New Group</string>
+    <string name="title_edit_goal">Edit goal</string>
+    <string name="title_save_money">Save money</string>
+    <string name="title_edit_contribution">Edit Contribution</string>
+    <string name="title_add_goal">Add Goal</string>
+    <string name="title_edit_group">Edit Group</string>
+    <string name="title_group">Groups</string>
+    <string name="title_contact">Contacts</string>
+    <string name="title_analytics">Analytics</string>
+    <string name="title_empty"></string>
+
+    <!-- page tab title -->
+    <string name="group_detail_member">Members</string>
+    <string name="group_detail_contribution">Contribution</string>
+    <string name="group_detail_goal">Goals</string>
+
+    <!-- common string -->
+    <string name="group_role_member">group member</string>
+    <string name="group_role_admin">group admin</string>
+
+    <!-- success content -->
+    <string name="content_edit_profile">You have been changed your profiles</string>
+    <string name="content_change_email">You have been changed your email</string>
+    <string name="content_change_paypal_email">You have been changed your PayPal email</string>
+    <string name="content_change_password">You have been changed your password</string>
+    <string name="content_donated">You have donated 1000 for Maintain and Future development</string>
+    <string name="content_join_group">You have successfully joined new group</string>
+
+    <!-- notice -->
+    <string name="notice_input_code">Please input verify code</string>
+    <string name="notice_success">Your operation success</string>
+    <string name="notice_input_email">Please input verify email</string>
+    <string name="notice_email_duplicate">This email already exist</string>
+    <string name="notice_network_error">Network error</string>
+    <string name="notice_verify_failed">Email verification failed, Please retry</string>
+    <string name="notice_verify_duplicated">Email verification duplicated, Please retry</string>
+    <string name="notice_open_storage_permission">Please open storage permission</string>
+    <string name="notice_open_camera_permission">Please open camera permission</string>
+    <string name="notice_permission_before">Please open </string>
+    <string name="notice_permission"> permission</string>
+    <string name="notice_birthday_overlay"> Please select correct birthday</string>
+    <string name="notice_input_nation">Please input nationality</string>
+    <string name="notice_input_name">Please input user name</string>
+    <string name="notice_input_gender">Please input gender</string>
+    <string name="notice_input_birthday">Please input date of birth</string>
+    <string name="notice_update_failed">Update failed</string>
+    <string name="notice_update_success">Update success</string>
+    <string name="notice_input_current_password">Please input current password</string>
+    <string name="notice_input_correct_password">Please input correct password</string>
+    <string name="notice_input_new_password">Please input new password</string>
+    <string name="notice_input_confirm_password">Please input confirm password</string>
+    <string name="notice_input_correct_confirm_password">Please input correct confirm password</string>
+    <string name="notice_select_image">Please select group image</string>
+    <string name="notice_input_group_name">Please input group name</string>
+    <string name="notice_your_paypal_email_not_exist">Your paypal email not exist</string>
+    <string name="notice_receiver_paypal_email_not_exist">Receiver paypal email not exist</string>
+    <string name="notice_input_amount">Please input amount</string>
+
+    <!-- alert title -->
+    <string name="alert_select_gender">Select a gender</string>
+    <string name="alert_select_nationality">Select a nationality</string>
+    <string name="alert_active_contribution">Would you like to active contribution?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Search word</string>
+
+    <string name="message_content_loading">Loading</string>
+    <string name="message_image_uploading">Uploading</string>
+    <string name="article">Android is a mobile operating system developed by Google, based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets. Android\'s user interface is mainly based on direct manipulation, using touch gestures that loosely correspond to real-world actions, such as swiping, tapping and pinching, to manipulate on-screen objects, along with a virtual keyboard for text input. In addition to touchscreen devices, Google has further developed Android TV for televisions, Android Auto for cars, and Android Wear for wrist watches, each with a specialized user interface. Variants of Android are also used on notebooks, game consoles, digital cameras, and other electronics.
+        \n\nInitially developed by Android Inc., which Google bought in 2005, Android was unveiled in 2007, along with the founding of the Open Handset Alliance – a consortium of hardware, software, and telecommunication companies devoted to advancing open standards for mobile devices. Beginning with the first commercial Android device in September 2008, the operating system has gone through multiple major releases, with the current version being 7.0 "Nougat", released in August 2016. Android applications ("apps") can be downloaded from the Google Play store, which features over 2.7 million apps as of February 2017. Android has been the best-selling OS on tablets since 2013, and runs on the vast majority[a] of smartphones. As of May 2017, Android has two billion monthly active users, and it has the largest installed base of any operating system.
+        \n\nAndroid\'s source code is released by Google under an open source license, although most Android devices ultimately ship with a combination of free and open source and proprietary software, including proprietary software required for accessing Google services. Android is popular with technology companies that require a ready-made, low-cost and customizable operating system for high-tech devices. Its open nature has encouraged a large community of developers and enthusiasts to use the open-source code as a foundation for community-driven projects, which deliver updates to older devices, add new features for advanced users or bring Android to devices originally shipped with other operating systems. The extensive variation of hardware in Android devices causes significant delays for software upgrades, with new versions of the operating system and security patches typically taking months before reaching consumers, or sometimes not at all. The success of Android has made it a target for patent and copyright litigation between technology companies.</string>
+    <string name="image_description">Sample Image</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.money.well">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_image"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_image"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".controller.groups.GroupDetailActivity"></activity>
+        <activity
+            android:name=".controller.settings.DonateMoneyActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider> <!-- User Main Part Start -->
+        <activity
+            android:name=".controller.home.AnalyticsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".controller.settings.DonationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.contacts.MemberDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".controller.common.SuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.EditGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.AddGoalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.EditContributionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.SaveMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.EditGoalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.SendMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.CreateGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.JoinGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.SearchGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".controller.home.HomeNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.HelpContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.ChangePaypalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.ChangeEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.EditUsernameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.EditPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.settings.ProfileSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.home.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.signup.PaypalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.signup.UploadPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.signup.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.signup.InputPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.signup.VerifyEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.login.ResetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.login.SendRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.groups.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.login.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

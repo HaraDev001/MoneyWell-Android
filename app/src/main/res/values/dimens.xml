@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="content_padding_left">20dp</dimen>
+    <dimen name="content_padding_bottom">20dp</dimen>
+    <dimen name="help_padding_left">30dp</dimen>
+    <dimen name="help_padding_right">30dp</dimen>
+    <dimen name="content_padding_right">20dp</dimen>
+    <dimen name="setting_padding_left">25dp</dimen>
+    <dimen name="setting_padding_right">25dp</dimen>
+    <dimen name="item_padding_top">0dp</dimen>
+    <dimen name="item_padding__text_top">20dp</dimen>
+    <dimen name="item_padding_text_left">20dp</dimen>
+    <dimen name="bottom_text_padding">35dp</dimen>
+    <dimen name="setting_item_height">60dp</dimen>
+    <dimen name="notice_count_size">20dp</dimen>
+
+    <!-- dimen icon size-->
+
+    <dimen name="item_image_size">60dp</dimen>
+    <dimen name="setting_icon_size">30dp</dimen>
+    <dimen name="setting_image_size">40dp</dimen>
+    <dimen name="bottom_icon_size">25dp</dimen>
+    <dimen name="top_image_icon_size">20dp</dimen>
+
+    <!-- dimen font size-->
+    <dimen name="font_size_money_big">28dp</dimen>
+    <dimen name="dimen_text_font_size">14dp</dimen>
+
+</resources>

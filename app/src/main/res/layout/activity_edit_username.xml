@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_edit_username"
+    android:orientation="vertical"
+    android:theme="@style/MyTheme"
+    tools:context="com.money.well.controller.settings.EditUsernameActivity">
+
+
+    <include
+        android:id="@+id/login_topbar"
+        layout="@layout/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/content_padding_left"
+        android:paddingRight="@dimen/content_padding_right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:text="Please input your name"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/lay_nationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User name"
+                android:textColor="@color/black">
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="">
+            </EditText>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_layout_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                app:hintAnimationEnabled="true"
+                android:visibility="gone"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@color/jumbo">
+
+                <EditText
+                    android:id="@+id/txt_paypal_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:hint="User name"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="0dp"
+                    android:singleLine="true"
+                    android:textColor="@color/jet"
+                    android:textColorHint="@color/jet"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:text="Save"
+            android:background="@drawable/radius_button">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

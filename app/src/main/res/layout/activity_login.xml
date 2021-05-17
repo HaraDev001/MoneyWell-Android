@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/MyTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lay_login"
+    tools:context="com.money.well.controller.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/content_padding_left"
+        android:paddingRight="@dimen/content_padding_right"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo_image">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@color/jumbo">
+
+                <EditText
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="-5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/jet"
+                    android:textColorHint="@color/jet"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                app:passwordToggleEnabled="true"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="false"
+                app:passwordToggleTint="@color/jumbo">
+
+                <EditText
+                    android:id="@+id/txt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:paddingTop="10dp"
+                    android:inputType="textPassword"
+                    android:textSize="14dp"
+                    android:textColor="@color/jet"
+                    android:hint="Password"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/jet"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/txt_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/linked_text"
+                android:textSize="12dp"
+                android:text="Forgot Password?">
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:text="Sign in"
+            android:background="@drawable/radius_button">
+        </Button>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_new_moneywell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/linked_text"
+                android:textSize="12dp"
+                android:text="New to MoneyWell?">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/linked_text"
+                android:textSize="12dp"
+                android:text="Sign up now">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp" />
+
+            <ImageView
+                android:id="@+id/img_facebook"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/facebook_logo_color">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_google"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
+                android:visibility="gone"
+                android:src="@drawable/google_logo_color">
+            </ImageView>
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

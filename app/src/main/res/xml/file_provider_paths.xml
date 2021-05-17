@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path path="" name="imdemo_camera_photos"></external-path>
+        <external-path path="" name="fast_chat"></external-path>
+    </paths>
+</resources>

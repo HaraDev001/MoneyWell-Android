@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_help_content"
+    android:orientation="vertical"
+    tools:context="com.money.well.controller.settings.HelpContentActivity">
+
+
+    <include
+        android:id="@+id/login_topbar"
+        layout="@layout/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/content_padding_left"
+        android:paddingRight="@dimen/content_padding_right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/title_help_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+<!--    <color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#188ee8</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <color name="black">#000000</color>
+    <color name="blue">#0000ff</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="dark_monsoon">#555555</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#f2f2f2</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white_iron">#EEEEEE</color>
+    <color name="white_gray">#FEFEFE</color>
+    <color name="item_selected">#69C3E7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="player_solid">#9da1a6</color>
+
+    <color name="linked_text">#483D8B</color>
+    <color name="button_color">#cc0066</color>
+    <color name="button__clicked_color">#99004d</color>
+
+    <!-- 灰色 -->
+    <color name="gray01">#DADDE2</color>
+    <color name="gray02">#A3A1A1</color>
+    <color name="gray03">#9FA2A3</color>
+    <color name="gray04">#757778</color>
+    <color name="gray05">#95A3AE</color>
+    <color name="gray06">#f5f5f5</color>
+    <color name="gray07">#838181</color>
+
+    <!-- 半透明 -->
+    <color name="translucent01">#55000000</color>
+    <color name="translucent02">#97000000</color>
+    <color name="lucen">#00000000</color>
+    <color name="forgetpwd">#91B1C7</color>
+    <color name="pa_item_bg">#E9E9E9</color>
+    <color name="fav_click_color">#66000000</color>
+    <color name="sign_mood_selected">#ff9B9B9C</color>
+    <color name="sign_mood_nomal">#00000000</color>
+    <color name="sign_mood_nomal_0">#e0e0e0</color>
+
+    <!-- 绿色 -->
+    <color name="green">#45CD87</color>
+    <color name="green01">#BA96F76E</color>
+    <color name="green02">#59E1FA</color>
+    <color name="green03">#C9FFDE</color>
+    <color name="green04">#31F77E</color>
+    <color name="green05">#9BECF9</color>
+
+    <!-- 紫色 -->
+    <color name="violet01">#DB96FF</color>
+    <color name="violet02">#BE55F5</color>
+    <color name="violet03">#CBC3EE</color>
+    <color name="violet04">#937FEF</color>
+
+    <!-- 浅黄绿 -->
+    <color name="yellowGreen01">#D6FB9C</color>
+    <color name="yellowGreen02">#A9F82E</color>
+    <color name="yellow01">#FCDB70</color>
+    <color name="yellow02">#F8C82E</color>
+
+    <!-- 红紫 -->
+    <color name="red01">#F9B2C0</color>
+    <color name="red02">#F6728C</color>
+    <color name="redViolet01">#F6D1F3</color>
+    <color name="redViolet02">#F6728C</color>
+
+    <color name="font_blue">#0066ff</color>
+    <color name="font_blue01">#188ee8</color>
+    <color name="font_gray">#757778</color>
+
+    <!--dialog -->
+    <color name="sampleDark">#1B5E20</color>
+    <color name="sampleLight">#388E3C</color>
+    <color name="sampleLighter">#4CAF50</color>
+    <color name="dialogAccent">#795548</color>
+
+    <!--graph -->
+    <color name="clr_main">#4767b8</color>
+</resources>
